@@ -158,7 +158,7 @@ int main(void){
   float rate = 1e-1;
 
   printf("cost = %f\n", cost(m, ti, to));
-  for(size_t i = 0; i < 1000*100; ++i){
+  for(size_t i = 0; i < 1000*10; ++i){
     finite_diff(m, g, eps, ti, to);
     xor_learn(m, g, rate);
     printf("cost = %f\n", cost(m, ti, to));
